@@ -1,0 +1,186 @@
+@font-face {
+  font-family: myFont;
+  src: url(bad.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/fon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px; /* Changed padding for easier management */
+}
+
+body::after {
+  content: " ";
+  position: fixed;
+  width: 480.18px;
+  height: 522px;
+  top: 48px;
+  background-image: url(images/IMAGE.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+}
+
+nav img {
+  width: 150px;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  max-width: 1000px; /* Added max-width for better responsiveness */
+}
+
+.center h1 {
+  text-align: center;
+  color: transparent; /* Make the text transparent */
+  font-size: 54px;
+  font-weight: 800;
+  font-family: myFont;
+  background: linear-gradient(to right, #fff, #fff 65%, #b8b4b4 75%); /* Define the gradient */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  background-clip: text;
+}
+
+
+.about {
+  width: 100%; /* Changed width to 100% for responsiveness */
+  max-width: 845px; /* Added max-width for better responsiveness */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Added margin-top for spacing */
+}
+
+.about span {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%; /* Changed width to 100% for responsiveness */
+  max-width: 656.5px; /* Added max-width for better responsiveness */
+  gap: 24px;
+  justify-content: center; /* Center align buttons */
+  margin-top: 20px; /* Added margin-top for spacing */
+}
+
+.btn {
+  width: 100%; /* Changed width to 100% for responsiveness */
+  max-width: 328.5px; /* Added max-width for better responsiveness */
+  height: 56px;
+  padding: 16px 28px 16px 24px;
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: myFont;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.button1 {
+  background: linear-gradient(0deg, #f1c26b, #f1c26b),
+              radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: 0 5px 15px #f1c26b; /* Adjust the values as needed */
+}
+
+
+
+
+.button2 {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)),
+              radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid black;
+}
+
+@media (max-width: 900px) {
+  .center h1 {
+      font-size: 55px;
+      font-weight: 700;
+  }
+
+  .about {
+      display: grid;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+      padding: 40px 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .center h1 {
+      font-size: 45px;
+      font-weight: 700;
+  }
+
+  .buttons {
+      flex-direction: column;
+      width: 100%; /* Changed width to 100% for responsiveness */
+      max-width: 328.5px; /* Added max-width for better responsiveness */
+  }
+
+  .about {
+      width: 100%; /* Changed width to 100% for responsiveness */
+      max-width: 328.5px; /* Added max-width for better responsiveness */
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+      padding: 20px;
+  }
+
+  .center h1 {
+      font-size: 30px;
+      font-weight: 500;
+  }
+}

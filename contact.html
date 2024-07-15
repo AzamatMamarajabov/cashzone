@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Zone Capital</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="./images/Cashzone final/Highlight icons/avatarka 02.jpg" type="image/gif" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3825348517686783');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3825348517686783&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<div class="modal">
+    <div class="top">
+        <h1>RO'YHATDAN O'TISH</h1>
+        <p>BIZ BILAN DAROMAD OLISHNI BUGUNOQ BOSHLANG</p>
+    </div>
+
+    <div class="card">
+        <div class="one">
+            <div class="text">
+                <h2>MA'LUMOTLARINGIZNI QOLDIRING BIZ SIZ BILAN BOG'LANAMIZ</h2>
+                <p>ROBOTIMIZ ENG MINIMAL 1.000$ DEPOZITDAN BOSHLAB ISHLAYDI, SIZ QANCHA INVESTITSIYA QILMOQCHISIZ?</p>
+            </div>
+
+            <form id="submit-to-google-sheet">
+                <input type="text" placeholder="Ism" id="name" name="name" autocomplete="off">
+                <input type="tel" placeholder="Telefon raqam" id="phone" name="phone" autocomplete="off">
+                <input type="number" placeholder="Qancha investitsiya kiritmoqchisiz?" name="price" id="price" autocomplete="off">
+                <button type="submit" id="submitButton" disabled>Yuborish <img src="images/button_logo-removebg-preview.png" alt=""></button>
+            </form>
+        </div>
+
+        <div class="two">
+            <img src="images/robot.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="fon" id="fon">
+    <div class="loader"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
