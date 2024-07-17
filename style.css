@@ -8,6 +8,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* .btn sinfiga qo'llanadigan matn dekoratsiyasini olib tashlash */
+.btn {
+  text-decoration: none;
+}
 
 body {
   background-image: url(images/fon.png);
